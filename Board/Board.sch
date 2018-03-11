@@ -18819,6 +18819,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <part name="P+3" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="+12V" device=""/>
 <part name="GND10" library="supply1" library_urn="urn:adsk.eagle:library:371" deviceset="GND" device=""/>
 <part name="C18" library="rcl" library_urn="urn:adsk.eagle:library:334" deviceset="C-EU" device="C0603" package3d_urn="urn:adsk.eagle:package:23616/2" value="100n"/>
+<part name="D9" library="SparkFun-DiscreteSemi" deviceset="DIODE" device="BAS16"/>
 </parts>
 <sheets>
 <sheet>
@@ -18909,6 +18910,7 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <instance part="P+3" gate="1" x="-5.08" y="132.08"/>
 <instance part="GND10" gate="1" x="-5.08" y="104.14"/>
 <instance part="C18" gate="G$1" x="45.72" y="119.38"/>
+<instance part="D9" gate="G$1" x="27.94" y="111.76" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -18992,8 +18994,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 </segment>
 <segment>
 <pinref part="IC4" gate="G$1" pin="GND"/>
-<wire x1="25.4" y1="109.22" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
+<wire x1="25.4" y1="109.22" x2="27.94" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="GND9" gate="1" pin="GND"/>
+<wire x1="27.94" y1="109.22" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="38.1" y1="106.68" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
 <pinref part="K1" gate="1" pin="2"/>
 <wire x1="38.1" y1="116.84" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
@@ -19001,6 +19004,8 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="C18" gate="G$1" pin="2"/>
 <wire x1="45.72" y1="114.3" x2="45.72" y2="109.22" width="0.1524" layer="91"/>
 <wire x1="45.72" y1="109.22" x2="38.1" y2="109.22" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="A"/>
+<junction x="27.94" y="109.22"/>
 </segment>
 <segment>
 <pinref part="R19" gate="G$1" pin="1"/>
@@ -19456,6 +19461,9 @@ You are welcome to use this library for commercial purposes. For attribution, we
 <pinref part="IC4" gate="G$1" pin="OUT"/>
 <pinref part="K1" gate="1" pin="1"/>
 <wire x1="25.4" y1="116.84" x2="27.94" y2="116.84" width="0.1524" layer="91"/>
+<pinref part="D9" gate="G$1" pin="C"/>
+<wire x1="27.94" y1="116.84" x2="27.94" y2="114.3" width="0.1524" layer="91"/>
+<junction x="27.94" y="116.84"/>
 </segment>
 </net>
 </nets>
